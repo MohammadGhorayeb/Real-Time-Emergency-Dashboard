@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container {
+            padding: 20px;
+        }
+        #map {
+            height: 500px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #output-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 50px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Welcome, {{ username }}!</h1>
+        <h3>Your Location: {{ location }}</h3>
+
+        <!-- 3D Map Section -->
+        <div id="map"></div>
+
+        <!-- Text Processing Section -->
+        <div>
+            <label for="user-input">Enter your text:</label><br>
+            <textarea id="user-input" rows="4" cols="50" placeholder="Type something..."></textarea><br>
+            <button onclick="processInputText()">Submit</button>
+        </div>
+
+        <div>
+            <h3>Output:</h3>
+            <div id="output-box">
+                Your processed text will appear here.
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to External JavaScript File -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
