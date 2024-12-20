@@ -57,7 +57,7 @@ An interactive web application that processes user input, predicts emergency cat
 ### **1. Clone the Repository**
 Clone the project from GitHub:
 ```bash
-git clone https://github.com/MohammadGhorayeb/490_Project
+git clone https://github.com/MohammadGhorayeb/Real-Time-Emergency-Dashboard
 ```
 
 ### **2. Navigate to the Project Directory**
