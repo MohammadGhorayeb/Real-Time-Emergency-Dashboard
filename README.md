@@ -56,3 +56,27 @@ An interactive web application that processes user input, predicts emergency cat
 Clone the project from GitHub:
 ```bash
 git clone https://github.com/MohammadGhorayeb/490_Project
+```
+
+### **2. Navigate to the Project Directory**
+Move to the project folder:
+```bash
+cd 490_Project
+```
+
+### **3. Install Dependencies**
+Ensure you have Python 3.9+ installed. Install the required libraries using pip:
+```bash
+pip install -r dependencies.txt
+```
+
+### **4.Run the Application**
+Navigate to the web folder and start the Flask app:
+```bash
+cd web
+python app.py
+```
+
+
+
+
