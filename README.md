@@ -43,6 +43,8 @@ An interactive web application that processes user input, predicts emergency cat
   - Fine-tuned for emergency text classification.
 - **OpenAI API**:
   - Extracts sub-location data (cities, villages) from user input.
+- **Llama API**:
+  - Provides a small description of the emergency.
 
 ### **Database**
 - **SQLite**:
